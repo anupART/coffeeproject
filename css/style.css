@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height:60px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    /* flex-direction: column; */
+  }
+#logo{
+    margin:  9px 25px;
+
+}
+#logo img{
+    height: 60px;
+    margin:  5px 6px;
+
+}
+
+ #navbar ul{
+    display: flex;
+    font-family: 'Rubik', sans-serif
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+ #navbar ul li{
+list-style: none;
+font-size: 1.2rem;
+}
+ #navbar ul li a{
+     color:white;
+ display: block;
+ padding: 3px 30px ;
+ border-radius: 10px;
+ text-decoration: none;
+}
+ #navbar ul li a:hover{
+ 
+color: rgb(8, 5, 5);
+background-color:aliceblue
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 170px;
+    justify-content: center;
+    align-items: center;
+    height: 311px;
+
+}
+#home::before{
+    content: "";
+    background:url('../coffee.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 410px;
+   
+    width: 100%;
+    z-index: -1;
+    opacity: 0.80;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+}
+#services{
+    margin: 30px;
+    display: flex;
+    padding-top: 10px;
+}
+#services .box{
+    /* border: 2px red solid; */
+    padding: 24px;
+    margin: 2px 5px;
+    border-radius: 20px;
+    /* background-color: rgba(202, 200, 200, 0.712); */
+    background:url('../back.png') no-repeat center center/cover;
+    padding-top: 20px;
+}
+#services .box img{
+  height: 130px;
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+  
+  /* width: 220px; */
+}
+#services .box p{
+    text-align: center;
+    justify-content: center;
+    justify-content: space-around;
+    font-family: 'Merriweather', serif;
+    /* color: aliceblue; */
+     color:#ffffff;
+    /* font-size: 12px; */
+}
+
+/* #services{} */
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client-section{
+    /* background-color:aqua; */
+    position: relative;
+    height: 300px;
+    /* align-items: center;
+    justify-content: center; */
+
+}
+#client-section ::before{
+ content: "";
+ position: absolute;
+ /* background: url('../salad.png'); */
+ width: 25%;
+ height: 40%;
+ z-index: -1;
+ opacity: 0.8;
+ /* margin-right: 100px; */
+
+}
+
+
+
+#clients img{
+    height: 110px;
+    border-radius: 15px;
+
+}
+.client-item{
+    padding: 40px;
+    /* width: 90px;
+    height: 40px; */
+    /* border-radius: 10px; */
+}
+
+/* contact sectiom */
+
+#contact{
+    /* padding-right: 70px;
+    margin-right: 70px; */
+    position: relative;
+    /* background-color: gray; */
+    background: url('../antique.jpg');
+}
+#contact ::before{
+    content: "";
+    position: absolute;
+    width: 750px;
+    height: 230px;
+    z-index: -1;
+    opacity: 0.3;
+    /* background: url('../antique.jpg'); */
+    /* background-color: gray; */
+}
+footer{
+    background: black;
+    color: white;
+    padding: 10px 20px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    
+   
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: 15px;
+    font-size: 1.1rem;
+    border-radius: 15px;
+
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+  font-size: 1.2rem;
+  font-family: 'Merriweather', serif;
+}
+
+/*uitilty class*/
+
+.h-primary{
+    font-size: 2.7rem;
+    padding: 12px;
+    font-family: 'Merriweather', serif;
+
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Merriweather', serif;
+    
+
+}
+.btn{
+    padding: 8px 10px;
+    border: 2px white solid;
+    background-color:darkorange;
+    color: white;
+    margin: 15px ;
+    font-size: 1.5rem;
+    border-radius: 10px;
+   cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
+
